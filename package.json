@@ -1,0 +1,40 @@
+{
+  "name": "tokencost",
+  "version": "1.0.0",
+  "description": "Offline cost estimator for LLM / AI inference. Zero dependencies. Know what a prompt or a batch of calls will cost BEFORE you hit the API.",
+  "type": "module",
+  "bin": {
+    "tokencost": "bin/tokencost.js"
+  },
+  "main": "src/core.js",
+  "exports": {
+    ".": "./src/core.js",
+    "./pricing": "./src/pricing.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/tokencost.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "llm",
+    "cost",
+    "pricing",
+    "tokens",
+    "openai",
+    "anthropic",
+    "estimate",
+    "budget",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "zpt-master"
+}
